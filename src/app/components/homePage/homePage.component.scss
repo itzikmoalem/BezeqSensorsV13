@@ -1,0 +1,31 @@
+#page{
+    margin: auto;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    padding-top: 2%;
+    margin: auto;
+    display: block;
+}
+
+mat-grid-tile {
+    background-color: white;
+}
+
+.mat-button {
+    background-color:aqua;
+}
+
+.add-button{
+    background:rgb(190, 46, 46);
+    color: white;
+}
+
+.search-button{
+    background:rgb(182, 140, 35);
+    color: white;
+}

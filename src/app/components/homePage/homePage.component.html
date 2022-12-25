@@ -1,0 +1,35 @@
+<div class="container" id="page">  
+    
+    <img src="https://res.cloudinary.com/sherutnet/image/upload/f_auto,q_auto/mini_logos/Bezeq2020.png" id="logo">
+
+    <h1> Bezeq Sensors </h1>
+      
+
+    <h3 dir="rtl" style="margin:auto">
+        {{amountOfDevices}} התקנים רשומים
+
+        ( {{workingDevices}} תקינים {{amountOfDevices - workingDevices}} בתקלה )
+    </h3>
+
+    <mat-grid-list  [cols]="breakpoint" rowHeight="1:1" (window:resize)="onResize($event)">
+      <mat-grid-tile  *ngFor="let s of allDevices ">
+        <app-sensor [device]="s" (newItemEvent)="addItem($event)"></app-sensor>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <br>
+
+    <div class="example-button-row">
+      <button mat-stroked-button class="add-button" (click)="addNewSensor()">הוסף חיישן חדש</button>
+    </div>
+
+    <br>
+
+    <strong>:מכשירים</strong> <div *ngFor="let n of hebrewNamesList | listfilter:search">{{ n }}</div>
+    <br>
+    <input type="text" #searchItem> &nbsp;
+    <button mat-stroked-button class="search-button" (click)="searchSensor()">חפש</button>
+
+    <br>
+
+  </div>  

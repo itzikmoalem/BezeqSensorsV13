@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'BezeqSensorsV13'`, () => {
+  it(`should have as title 'BezeqSensors'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('BezeqSensorsV13');
+    expect(app.title).toEqual('BezeqSensors');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('BezeqSensorsV13 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('BezeqSensors app is running!');
   });
 });

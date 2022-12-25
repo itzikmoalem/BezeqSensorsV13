@@ -1,0 +1,20 @@
+<div id="entireBox">
+    <div id="myBox">
+        <img *ngIf="imageSrc" src="{{imageSrc}}" >
+
+        <p>{{device.DeviceTypeHebrew}}</p>
+
+        <h2>{{device.WebSiteDeviceName}}</h2>
+
+        <span class="dot" [ngStyle]="{'background-color': bgColor}" (click)="changeActive()"></span>
+
+        <h4>
+            צימוד &nbsp; {{date}}
+        </h4>
+        <h4 >
+            דיווח אחרון &nbsp; {{lastDate}}
+        </h4> 
+    </div>
+</div>
+
+
